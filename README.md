@@ -40,6 +40,11 @@ Either way, you will create the conda environment using a `.yml` file provided i
 conda env create -f environment.yml
 ```
 #### Flexible Install (Linux, Windows, Mac?)
+
+* The env file has an explicit link to CUDA 12.6. If you would like to change this, substitute the last line of `env-flex.yml` with the link listed at the [official pytorch site](https://pytorch.org/).
+
+* At the time of writing, CUDA is not available for Mac. Remove the link at the end of `env-flex.yml`.
+
 ```
 conda env create -f env-flex.yml
 ```
